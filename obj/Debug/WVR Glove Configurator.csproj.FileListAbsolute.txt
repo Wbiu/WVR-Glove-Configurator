@@ -1,0 +1,29 @@
+F:\TA Dokumentations\WVR Glove Configurator\bin\Debug\WVR Glove Configurator.exe.config
+F:\TA Dokumentations\WVR Glove Configurator\bin\Debug\WVR Glove Configurator.exe
+F:\TA Dokumentations\WVR Glove Configurator\bin\Debug\WVR Glove Configurator.pdb
+F:\TA Dokumentations\WVR Glove Configurator\obj\Debug\WVR Glove Configurator.csproj.AssemblyReference.cache
+F:\TA Dokumentations\WVR Glove Configurator\obj\Debug\WVR_Glove_Configurator.Form1.resources
+F:\TA Dokumentations\WVR Glove Configurator\obj\Debug\WVR_Glove_Configurator.Properties.Resources.resources
+F:\TA Dokumentations\WVR Glove Configurator\obj\Debug\WVR Glove Configurator.csproj.GenerateResource.cache
+F:\TA Dokumentations\WVR Glove Configurator\obj\Debug\WVR Glove Configurator.csproj.CoreCompileInputs.cache
+F:\TA Dokumentations\WVR Glove Configurator\obj\Debug\WVR Glove Configurator.exe
+F:\TA Dokumentations\WVR Glove Configurator\obj\Debug\WVR Glove Configurator.pdb
+F:\TA Dokumentations\WVR Glove Configurator\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+F:\TA Dokumentations\WVR Glove Configurator\bin\Debug\System.Buffers.dll
+F:\TA Dokumentations\WVR Glove Configurator\bin\Debug\System.Memory.dll
+F:\TA Dokumentations\WVR Glove Configurator\bin\Debug\System.Numerics.Vectors.dll
+F:\TA Dokumentations\WVR Glove Configurator\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+F:\TA Dokumentations\WVR Glove Configurator\bin\Debug\System.Text.Encodings.Web.dll
+F:\TA Dokumentations\WVR Glove Configurator\bin\Debug\System.Text.Json.dll
+F:\TA Dokumentations\WVR Glove Configurator\bin\Debug\System.Threading.Tasks.Extensions.dll
+F:\TA Dokumentations\WVR Glove Configurator\bin\Debug\System.ValueTuple.dll
+F:\TA Dokumentations\WVR Glove Configurator\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+F:\TA Dokumentations\WVR Glove Configurator\bin\Debug\System.Buffers.xml
+F:\TA Dokumentations\WVR Glove Configurator\bin\Debug\System.Memory.xml
+F:\TA Dokumentations\WVR Glove Configurator\bin\Debug\System.Numerics.Vectors.xml
+F:\TA Dokumentations\WVR Glove Configurator\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+F:\TA Dokumentations\WVR Glove Configurator\bin\Debug\System.Text.Encodings.Web.xml
+F:\TA Dokumentations\WVR Glove Configurator\bin\Debug\System.Text.Json.xml
+F:\TA Dokumentations\WVR Glove Configurator\bin\Debug\System.Threading.Tasks.Extensions.xml
+F:\TA Dokumentations\WVR Glove Configurator\bin\Debug\System.ValueTuple.xml
+F:\TA Dokumentations\WVR Glove Configurator\obj\Debug\WVR Glove Configurator.csproj.CopyComplete
