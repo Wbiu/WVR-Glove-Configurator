@@ -28,11 +28,11 @@ namespace WVR_Glove_Configurator
         public Form1()
         {
             InitializeComponent();
-            InitializeProperty();
+            InitializeAppProperties();
             InitializeSettings();
         }
-
-        private void InitializeProperty()
+        // Filling GUI with information and init tool paths
+        private void InitializeAppProperties()
         {
             currentPath = Directory.GetCurrentDirectory();
             toolPath = currentPath + "\\tools";
@@ -47,13 +47,14 @@ namespace WVR_Glove_Configurator
             cmb_Contype.Items.Add("wired");
             cmb_Contype.Items.Add("wireless");
         }
-
+        // retriving settings
         private void InitializeSettings()
         {
             string jsonString = File.ReadAllText(gloveSettingsPath + "\\settings.json");
             dictSettings = JsonSerializer.Deserialize<Dictionary<string, Object>>(jsonString);
             ValidateSettings();
         }
+        //validating settings from the file and filling the GUI
         private void ValidateSettings()
         {
             JsonElement je_imu_state = (JsonElement) dictSettings["imu_state"];
@@ -61,16 +62,27 @@ namespace WVR_Glove_Configurator
             JsonElement je_iconType = (JsonElement)dictSettings["conType"];
             JsonElement je_collector_addr = (JsonElement)dictSettings["collector_addr"];
             JsonElement je_onboot_servo = (JsonElement)dictSettings["onboot_servo"];
+            JsonElement je_fingerAssist = (JsonElement)dictSettings["fingerassist"];
+            JsonElement je_assist_strenth = (JsonElement)dictSettings["assist_strenth"];
+            JsonElement je_assist_threshold = (JsonElement)dictSettings["assist_threshold"];
+            JsonElement je_assist_threshold_time = (JsonElement)dictSettings["fingerAssists_time_threshold"];
 
             int imuState = je_imu_state.GetInt32();
+            int assist_strenth = je_fingerAssist.GetInt32();
             cmb_ImuDataType.SelectedItem = je_imu_data.GetString();
             txt_MacAddr.Text = je_collector_addr.GetString();
             cmb_Contype.SelectedItem = je_iconType.GetString();
             int onboot_servo = je_onboot_servo.GetInt32();
+            int assist_threshold = je_assist_threshold.GetInt32();
+            double assist_threshold_time = je_assist_threshold_time.GetDouble();
+
+            tb_threshold.Text = assist_threshold.ToString();
+            tb_threshold_time.Text = assist_threshold_time.ToString();
 
             _ = imuState == 1 ? cb_ImuOn.Checked = true : cb_ImuOn.Checked = false;
             _ = onboot_servo == 1 ? cb_ServoCheck.Checked = true : cb_ServoCheck.Checked = false;
-
+            _ = assist_strenth == 1 ? cb_fingerassist.Checked = true : cb_fingerassist.Checked = false;
+            tb_assistStrenth.Text = je_assist_strenth.GetInt32().ToString();
 
         }
 
@@ -133,7 +145,7 @@ namespace WVR_Glove_Configurator
 
             }
         }
-
+        // File saving 
         private bool saveSettings()
         {
             bool saved = true;
@@ -150,7 +162,7 @@ namespace WVR_Glove_Configurator
             }
             return saved;
         }
-
+        // retriving unser input
         private bool retrieveGuiUserselection()
         {
             bool sucess = true;
@@ -189,6 +201,29 @@ namespace WVR_Glove_Configurator
                     sucess = false;
                 }
             }
+            if(cb_fingerassist.Checked)
+            {
+                if(tb_assistStrenth.Text != string.Empty && tb_threshold.Text != string.Empty && tb_threshold_time.Text != string.Empty)
+                {
+                    dictSettings["fingerassist"] = JsonSerializer.SerializeToElement(1);
+                    dictSettings["assist_strenth"] = JsonSerializer.SerializeToElement(int.Parse(tb_assistStrenth.Text));
+                    dictSettings["assist_threshold"] = JsonSerializer.SerializeToElement(int.Parse(tb_threshold.Text));
+                    dictSettings["fingerAssists_time_threshold"] = JsonSerializer.SerializeToElement(double.Parse(tb_threshold_time.Text));
+                }
+            }
+            else
+            {
+                dictSettings["fingerassist"] = JsonSerializer.SerializeToElement(0);
+            }
+
+            if(cb_ServoCheck.Checked)
+            {
+                dictSettings["onboot_servo"] = JsonSerializer.SerializeToElement(1);
+            }
+            else
+            {
+                dictSettings["onboot_servo"] = JsonSerializer.SerializeToElement(0);
+            }
             return sucess;
         }
 
@@ -220,6 +255,16 @@ namespace WVR_Glove_Configurator
                 b = false;
             }
             return b;
+        }
+
+        private void cmb_SerialPorts_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string[] _serialPorts = SerialPort.GetPortNames();
+            serialPorts = _serialPorts;
+            foreach (var port in serialPorts)
+            {
+                cmb_SerialPorts.Items.Add(port);
+            }
         }
     }
 }

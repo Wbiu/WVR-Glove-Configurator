@@ -27,3 +27,32 @@ F:\TA Dokumentations\WVR Glove Configurator\bin\Debug\System.Text.Json.xml
 F:\TA Dokumentations\WVR Glove Configurator\bin\Debug\System.Threading.Tasks.Extensions.xml
 F:\TA Dokumentations\WVR Glove Configurator\bin\Debug\System.ValueTuple.xml
 F:\TA Dokumentations\WVR Glove Configurator\obj\Debug\WVR Glove Configurator.csproj.CopyComplete
+D:\TA Dokumentations\WVR Glove Configurator\bin\Debug\WVR Glove Configurator.exe.config
+D:\TA Dokumentations\WVR Glove Configurator\bin\Debug\WVR Glove Configurator.exe
+D:\TA Dokumentations\WVR Glove Configurator\bin\Debug\WVR Glove Configurator.pdb
+D:\TA Dokumentations\WVR Glove Configurator\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\TA Dokumentations\WVR Glove Configurator\bin\Debug\System.Buffers.dll
+D:\TA Dokumentations\WVR Glove Configurator\bin\Debug\System.Memory.dll
+D:\TA Dokumentations\WVR Glove Configurator\bin\Debug\System.Numerics.Vectors.dll
+D:\TA Dokumentations\WVR Glove Configurator\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\TA Dokumentations\WVR Glove Configurator\bin\Debug\System.Text.Encodings.Web.dll
+D:\TA Dokumentations\WVR Glove Configurator\bin\Debug\System.Text.Json.dll
+D:\TA Dokumentations\WVR Glove Configurator\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\TA Dokumentations\WVR Glove Configurator\bin\Debug\System.ValueTuple.dll
+D:\TA Dokumentations\WVR Glove Configurator\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\TA Dokumentations\WVR Glove Configurator\bin\Debug\System.Buffers.xml
+D:\TA Dokumentations\WVR Glove Configurator\bin\Debug\System.Memory.xml
+D:\TA Dokumentations\WVR Glove Configurator\bin\Debug\System.Numerics.Vectors.xml
+D:\TA Dokumentations\WVR Glove Configurator\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\TA Dokumentations\WVR Glove Configurator\bin\Debug\System.Text.Encodings.Web.xml
+D:\TA Dokumentations\WVR Glove Configurator\bin\Debug\System.Text.Json.xml
+D:\TA Dokumentations\WVR Glove Configurator\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\TA Dokumentations\WVR Glove Configurator\bin\Debug\System.ValueTuple.xml
+D:\TA Dokumentations\WVR Glove Configurator\obj\Debug\WVR Glove Configurator.csproj.AssemblyReference.cache
+D:\TA Dokumentations\WVR Glove Configurator\obj\Debug\WVR_Glove_Configurator.Form1.resources
+D:\TA Dokumentations\WVR Glove Configurator\obj\Debug\WVR_Glove_Configurator.Properties.Resources.resources
+D:\TA Dokumentations\WVR Glove Configurator\obj\Debug\WVR Glove Configurator.csproj.GenerateResource.cache
+D:\TA Dokumentations\WVR Glove Configurator\obj\Debug\WVR Glove Configurator.csproj.CoreCompileInputs.cache
+D:\TA Dokumentations\WVR Glove Configurator\obj\Debug\WVR Glove Configurator.csproj.CopyComplete
+D:\TA Dokumentations\WVR Glove Configurator\obj\Debug\WVR Glove Configurator.exe
+D:\TA Dokumentations\WVR Glove Configurator\obj\Debug\WVR Glove Configurator.pdb
